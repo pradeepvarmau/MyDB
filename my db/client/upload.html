@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Admin Upload - Database Access</title>
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="path/to/logo.png" alt="𝐃𝐀𝐓𝐀𝐁𝐀𝐒𝐄" />
+                </a>
+            </div>
+            <nav>
+                <a href="index.html"><i class="fas fa-home"></i> Home</a>
+                <a href="about.html"><i class="fas fa-info-circle"></i> About Us</a>
+                <a href="services.html"><i class="fas fa-cogs"></i> Our Services</a>
+                <a href="login-signup.html"><i class="fas fa-sign-in-alt"></i> Login</a>
+                <a href="upload.html" id="upload-link" style="display: none;"><i class="fas fa-upload"></i> Admin Upload</a>
+            </nav>
+        </div>
+    </header>
+
+    <div class="dashboard-container">
+        <aside class="sidebar">
+            <h2>Admin Dashboard</h2>
+            <ul>
+                <li><a href="profile.html"><i class="fas fa-user"></i> Profile</a></li>
+                <li><a href="upload.html" id="upload-sidebar" style="display: none;"><i class="fas fa-upload"></i> Data Upload</a></li>
+                <li><a href="filters.html"><i class="fas fa-filter"></i> Manage Filters</a></li>
+                <li><a href="reports.html"><i class="fas fa-chart-line"></i> View Reports</a></li>
+                <li><a href="settings.html"><i class="fas fa-cog"></i> Settings</a></li>
+            </ul>
+        </aside>
+
+        <main class="main-content">
+            <h1>Admin Data Upload</h1>
+            <div id="upload-section" style="display: none;">
+                <form id="upload-form">
+                    <h2>Upload Your Data</h2>
+                    <p>Please complete the form below to upload your data. Ensure all required fields are filled out accurately.</p>
+                    
+                    <div class="form-group">
+                        <label for="country">Country</label>
+                        <input type="text" id="country" placeholder="Enter country" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="state">State</label>
+                        <input type="text" id="state" placeholder="Enter state" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="industry">Industry</label>
+                        <input type="text" id="industry" placeholder="Enter industry type" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="sub-industry">Sub-Industry</label>
+                        <input type="text" id="sub-industry" placeholder="Enter sub-industry" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="city">City</label>
+                        <input type="text" id="city" placeholder="Enter city" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="data-file">Upload Data File</label>
+                        <input type="file" id="data-file" accept=".csv,.xls,.xlsx" required>
+                        <small>Accepted formats: .csv, .xls, .xlsx</small>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="description">Description</label>
+                        <textarea id="description" placeholder="Provide a brief description of the data" rows="4" required></textarea>
+                    </div>
+
+                    <button type="submit">Upload Data</button>
+                    <div id="upload-message" style="margin-top: 10px;"></div>
+                </form>
+            </div>
+        </main>
+    </div>
+    <section class="container mt-5">
+        <h2 class="text-center">Manage Your Files</h2>
+        <div class="button-container text-center mt-4">
+            <a href="/upload" class="button btn btn-primary">
+                <i class="bi bi-upload"></i> Upload File
+            </a>
+            <a href="/download" class="button btn btn-secondary">
+                <i class="bi bi-download"></i> Download File
+            </a>
+            <a href="/share" class="button btn btn-success">
+                <i class="bi bi-share"></i> Share File
+            </a>
+        </div>
+    </section><br>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>About Us</h3>
+                <p>At Database Access, we are dedicated to providing comprehensive data solutions tailored to the unique needs of various industries. Our mission is to empower businesses with accurate and actionable information to enhance their decision-making processes.</p>
+            </div>
+    
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="services.html">Our Services</a></li>
+                    <li><a href="login.html">Login</a></li>
+                    <li><a href="signup.html">Signup</a></li>
+                    <li><a href="filter.html">Data Filters</a></li>
+                </ul>
+            </div>
+    
+            <div class="footer-section">
+                <h3>Our Services</h3>
+                <ul>
+                    <li><a href="#">Advanced Data Filtering</a></li>
+                    <li><a href="#">Comprehensive Data Insights</a></li>
+                    <li><a href="#">Secure Data Access</a></li>
+                    <li><a href="#">Community Support</a></li>
+                </ul>
+            </div>
+    
+            <div class="footer-section">
+                <h3>Contact Us</h3>
+                <p>If you have any questions or need further assistance, please don't hesitate to reach out to us.</p>
+                <address>
+                    <strong>Database Access Inc.</strong><br>
+                    123 Data St.<br>
+                    Suite 456<br>
+                    New Delhi, Delhi 110001<br>
+                    India<br>
+                    <a href="mailto:info@databaseaccess.com">info@databaseaccess.com</a><br>
+                    Phone: +91 123 456 7890
+                </address>
+            </div>
+        </div>
+        <div class="footer-bottom text-center">
+            <p>&copy; 2024 Database Access. All rights reserved.</p>
+            <div class="social-media-icons">
+                <a href="#" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+                <a href="#" aria-label="Twitter"><i class="bi bi-twitter"></i></a>
+                <a href="#" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+                <a href="#" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+            </div>
+        </div>
+    </footer>
+    
+    
+    <script src="js/script.js"></script>
+    <script>
+        // Simulate user login status
+        const isLoggedIn = false; // Change to true when admin is logged in
+    
+        // Redirect if not logged in
+        if (!isLoggedIn) {
+            window.location.href = 'login.html'; // Redirect to login page
+        } else {
+            // Show admin features if logged in
+            document.getElementById('upload-link').style.display = 'block';
+            document.getElementById('upload-sidebar').style.display = 'block';
+            document.getElementById('upload-section').style.display = 'block';
+        }
+    </script>
+    
+</body>
+</html>

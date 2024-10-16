@@ -1,0 +1,1110 @@
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background-color: #007bff;
+    color: white;
+    padding: 1rem 2rem;
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header-container .logo img {
+    height: 50px; /* Adjust based on your logo's height */
+}
+
+nav {
+    display: flex;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 1rem;
+    display: flex;
+    align-items: center;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #ffdd57; /* Change color on hover */
+}
+/* Responsive Design */
+@media (max-width: 1200px) {
+    .card {
+        width: calc(33.33% - 2rem);
+    }
+}
+
+@media (max-width: 768px) {
+    .card {
+        width: calc(50% - 2rem);
+    }
+
+    .hero h1 {
+        font-size: 1.8rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .card {
+        width: 100%;
+    }
+
+    .hero h1 {
+        font-size: 1.5rem;
+    }
+
+    .hero p {
+        font-size: 0.9rem;
+    }
+}
+
+/* Main Section Styles */
+main {
+    padding: 2rem;
+}
+
+.hero {
+    text-align: center;
+    margin-bottom: 2rem;
+    background-color: #e9ecef;
+    padding: 2rem;
+    border-radius: 8px;
+}
+
+.hero h1 {
+    margin-bottom: 1rem;
+}
+
+.cta-button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+    background-color: #0056b3;
+}
+
+/* Features Section */
+.features {
+    margin-bottom: 2rem;
+}
+
+.features h2 {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.cards-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px; /* Adds space between the cards */
+}
+
+.card {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 1.5rem;
+    flex: 1; /* Allows cards to take equal width */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card h3 {
+    margin-bottom: 1rem;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Testimonials Section */
+.testimonials {
+    margin-bottom: 2rem;
+}
+
+.testimonials h2 {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.testimonial-slider {
+    display: flex;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    max-width: 800px; /* Adjust as needed */
+    margin: 0 auto;
+}
+
+.testimonial-card {
+    min-width: 100%; /* Full width for sliding effect */
+    transition: transform 0.5s ease;
+    padding: 1.5rem;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.testimonial-card p {
+    font-style: italic;
+    margin: 0 0 0.5rem 0;
+}
+
+.testimonial-card cite {
+    display: block;
+    margin-top: 0.5rem;
+    font-weight: bold;
+    color: #007bff; /* Optional: Match the theme */
+}
+
+.slider-controls {
+    margin-top: 1rem;
+    text-align: center; /* Center the buttons */
+}
+
+.slider-btn {
+    background-color: #007bff; /* Primary color */
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.2rem;
+    transition: background-color 0.3s;
+}
+
+.slider-btn:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+}
+.testimonial-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+
+/* Call to Action Section */
+.call-to-action {
+    text-align: center;
+    background-color: #e9ecef;
+    padding: 2rem;
+    border-radius: 8px;
+    margin-bottom: 2rem;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #007bff;
+    color: white;
+}
+/*DashBoard in side upload folder*/
+.dashboard-container {
+    display: flex;
+}
+
+.sidebar {
+    background-color: #343a40;
+    color: white;
+    width: 250px;
+    padding: 1rem;
+}
+
+.sidebar h2 {
+    margin: 0 0 1rem 0;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    margin: 10px 0;
+}
+
+.sidebar ul li a {
+    color: white;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+
+.sidebar ul li a i {
+    margin-right: 8px;
+}
+
+.main-content {
+    flex-grow: 1;
+    padding: 2rem;
+}
+
+/*SERVICE.HTML*/
+.services-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; /* Adjust spacing */
+    margin: 2rem 0;
+}
+
+.service-card {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 2rem;
+    margin: 1rem;
+    flex: 1 0 30%; /* This ensures 3 cards per row */
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.service-card i {
+    font-size: 2rem;
+    color: #007bff; /* Primary color */
+}
+
+.service-card h2 {
+    margin: 1rem 0;
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Ensure responsiveness on smaller screens */
+@media (max-width: 768px) {
+    .service-card {
+        flex: 1 0 45%; /* 2 cards per row on medium screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .service-card {
+        flex: 1 0 100%; /* 1 card per row on small screens */
+    }
+}
+
+/*Map Location*/
+.contact-location {
+    display: flex;
+    justify-content: space-between; /* Adjust spacing between sections */
+    margin: 2rem 0; /* Spacing around the section */
+}
+
+.contact, .location {
+    flex: 1; /* Allow both sections to grow equally */
+    padding: 1rem; /* Padding inside sections */
+    box-sizing: border-box; /* Include padding in width calculation */
+    border: 1px solid #ccc; /* Optional: Add border for visual separation */
+}
+
+.location {
+    padding-left: 2rem; /* Optional: Add some space on the left */
+}
+.map-container {
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px; /* Rounded corners */
+    transition: transform 0.3s ease; /* Smooth transition */
+}
+
+.map-container:hover {
+    transform: scale(1.05); /* Slightly zoom in on hover */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Add shadow for depth */
+}
+
+.map-container iframe {
+    border-radius: 8px; /* Match iframe corners with container */
+}
+
+
+/*Footer Section*/
+footer {
+    background-color: #007bff;
+    color: white;
+    padding: 2rem 0;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.footer-section {
+    flex: 1;
+    min-width: 250px; /* Minimum width for each section */
+    margin: 1rem;
+}
+
+.footer-section h3 {
+    margin-bottom: 1rem;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin: 0.5rem 0;
+}
+
+.footer-section a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer-section a:hover {
+    text-decoration: underline;
+}
+
+.footer-bottom {
+    background-color: #333; /* Dark background */
+    color: #fff; /* White text color */
+    padding: 20px 0; /* Padding for top and bottom */
+    text-align: center; /* Center text */
+    font-size: 14px; /* Font size for text */
+}
+
+.footer-bottom p {
+    margin: 0; /* Remove default margin */
+}
+
+.social-media-icons {
+    margin-top: 10px; /* Space between the paragraph and icons */
+}
+
+.social-media-icons a {
+    color: #fff; /* Icon color */
+    margin: 0 15px; /* Space between icons */
+    text-decoration: none; /* Remove underline */
+    font-size: 20px; /* Size of icons */
+    transition: color 0.3s; /* Smooth transition on hover */
+}
+
+.social-media-icons a:hover {
+    color: #1da1f2; /* Change color on hover (Twitter blue) */
+}
+
+/* Optional: Add responsive adjustments */
+@media (max-width: 600px) {
+    .footer-bottom {
+        font-size: 12px; /* Smaller font on small screens */
+    }
+
+    .social-media-icons a {
+        margin: 0 10px; /* Less spacing between icons */
+        font-size: 18px; /* Smaller icons on small screens */
+    }
+}
+
+
+/*Contact Form*/
+.contact {
+    background-color: #f9f9f9;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: auto;
+}
+
+.contact h2 {
+    margin-bottom: 1rem;
+}
+
+.contact p {
+    margin-bottom: 1.5rem;
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    transition: border-color 0.3s;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+button {
+    background-color: #007bff;
+    color: white;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/*Pricing*/
+.pricing {
+    padding: 40px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.pricing-container {
+    display: flex;
+    justify-content: space-around; /* Distribute space evenly */
+    flex-wrap: wrap; /* Allow wrapping for smaller screens */
+}
+
+.pricing-card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 15px;
+    width: 300px; /* Fixed width for cards */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    flex: 1; /* Make cards flexible */
+    max-width: 300px; /* Limit maximum width */
+    min-width: 250px; /* Set minimum width for smaller screens */
+}
+
+.price {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+}
+
+@media (max-width: 768px) {
+    .pricing-container {
+        flex-direction: column; /* Stack cards vertically on small screens */
+        align-items: center; /* Center align */
+    }
+}
+
+/*Filter.html*/
+/* Filter Form Styles */
+
+
+.filter-form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.filter-group {
+    flex: 1 1 150px;
+}
+
+.filter-group label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    display: block;
+}
+
+.filter-group select,
+.filter-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.cta-button {
+    padding: 10px 20px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+    background-color: #218838;
+}
+
+.results-container {
+    padding: 20px;
+    background-color: #fff;
+    margin-top: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Footer Styles */
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    background-color: #007BFF;
+    color: white;
+    padding: 20px;
+}
+
+.footer-section {
+    flex: 1;
+    margin: 0 10px;
+}
+
+.footer-section h3 {
+    margin-top: 0;
+}
+
+.footer-bottom {
+    background-color: #0056b3;
+    text-align: center;
+    padding: 10px;
+    color: white;
+}
+
+/* Additional Styles for Cards and Reports (if needed) */
+.report-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.report-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 10px;
+    flex: 1 1 30%; /* Adjust card width */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+}
+
+.report-card:hover {
+    transform: translateY(-5px);
+}
+
+.report-card h3 {
+    margin: 0 0 10px;
+}
+
+.report-card p {
+    margin: 0 0 15px;
+}
+
+/* Social Media Icons */
+.social-media-icons a {
+    color: #fff;
+    margin: 0 10px;
+}
+
+/*DEMO FORM*/
+.demo-request {
+    text-align: center; /* Center text */
+    margin: 40px 0;
+}
+
+.demo-form-container {
+    max-width: 400px; /* Limit the width */
+    margin: 0 auto; /* Center the container */
+    padding: 20px;
+    background-color: #f9f9f9; /* Light background for contrast */
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+    margin-bottom: 15px; /* Space between input fields */
+}
+
+.form-group label {
+    display: block; /* Make labels block elements */
+    margin-bottom: 5px;
+    font-weight: bold; /* Bold labels */
+}
+
+.form-group input {
+    width: 100%; /* Full width inputs */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.cta-button {
+    width: 100%; /* Full width button */
+    padding: 10px;
+    background-color: #28a745; /* Green button */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+    background-color: #218838; /* Darker green on hover */
+}
+
+
+
+/*FILTER INSTRUCTIONS*/
+.features {
+    margin-top: 20px;
+    padding: 20px;
+}
+
+.features-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.feature-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 15px;
+    flex: 1 1 200px; /* Adjusts the card width */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+    text-align: center; /* Center text */
+}
+
+.feature-card:hover {
+    transform: translateY(-5px);
+}
+
+.feature-card i {
+    font-size: 24px;
+    color: #007bff; /* Change icon color */
+}
+
+.feature-card h3 {
+    margin: 10px 0 5px;
+}
+
+.feature-card p {
+    color: #555;
+}
+
+
+
+/*Testimonials*/
+.testimonials {
+    text-align: center;
+    margin: 40px 0;
+}
+
+.marquee {
+    overflow: hidden; /* Hide overflow */
+    white-space: nowrap; /* Keep items in one line */
+    position: relative; /* For positioning */
+}
+
+.testimonial-cards {
+    display: inline-block; /* Inline block for horizontal scrolling */
+    animation: marquee 15s linear infinite; /* Animation for marquee */
+}
+
+.testimonial-card {
+    display: inline-block; /* Cards side by side */
+    background-color: #f9f9f9; /* Light background for cards */
+    border-radius: 8px;
+    padding: 20px;
+    margin: 0 10px; /* Space between cards */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    width: 300px; /* Fixed width for cards */
+}
+
+.testimonial-card blockquote {
+    margin: 0; /* Remove default margin */
+}
+
+.testimonial-card cite {
+    display: block; /* Block for better spacing */
+    margin-top: 10px; /* Space between quote and cite */
+    font-style: italic; /* Italicize the cite */
+}
+
+@keyframes marquee {
+    0% { transform: translateX(100%); }
+    100% { transform: translateX(-100%); }
+}
+*/
+
+/*FAQS*/
+.faq {
+    margin: 40px 0;
+    text-align: center;
+}
+
+.faq-item {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    margin: 10px 0;
+}
+
+.faq-question {
+    background-color: #747272;
+}
+
+.faq-button {
+    background: none;
+    border: none;
+    width: 100%;
+    text-align: left;
+    padding: 15px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.faq-button:focus {
+    outline: none;
+}
+
+.faq-answer {
+    padding: 15px;
+    background-color: lightgray;
+    display: none; /* Hidden by default */
+    border-top: 1px solid #ccc;
+}
+
+
+
+/*Plan Comparission*/
+.plan-comparison {
+    margin: 2rem 0;
+}
+
+.plan-comparison table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.plan-comparison th, .plan-comparison td {
+    padding: 1rem;
+    text-align: center;
+    border: 1px solid #ccc;
+}
+
+.plan-comparison th {
+    background-color: #f4f4f4;
+}
+
+/*SignUp Form*/
+#signup-form {
+    max-width: 400px; /* Limit the width of the form */
+    margin: 20px auto; /* Center the form */
+    padding: 20px; /* Add padding inside the form */
+    border: 1px solid #ccc; /* Light border */
+    border-radius: 8px; /* Rounded corners */
+    background-color: #f9f9f9; /* Light background color */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+#signup-form input {
+    width: 100%; /* Full width inputs */
+    padding: 10px; /* Padding inside inputs */
+    margin-bottom: 15px; /* Space between inputs */
+    border: 1px solid #ccc; /* Light border for inputs */
+    border-radius: 4px; /* Rounded corners for inputs */
+    font-size: 16px; /* Font size */
+}
+
+#signup-form input:focus {
+    border-color: #007bff; /* Border color on focus */
+    outline: none; /* Remove default outline */
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Subtle shadow on focus */
+}
+
+#signup-form button {
+    width: 100%; /* Full width button */
+    padding: 10px; /* Padding inside the button */
+    background-color: #007bff; /* Button background color */
+    color: #fff; /* Button text color */
+    border: none; /* Remove border */
+    border-radius: 4px; /* Rounded corners */
+    font-size: 16px; /* Font size */
+    cursor: pointer; /* Pointer cursor */
+    transition: background-color 0.3s; /* Smooth transition */
+}
+
+#signup-form button:hover {
+    background-color: #0056b3; /* Darker button color on hover */
+}
+
+#signup-form p {
+    text-align: center; /* Center the text */
+    margin-top: 15px; /* Space above the paragraph */
+}
+
+#signup-form a {
+    color: #007bff; /* Link color */
+    text-decoration: none; /* Remove underline */
+}
+
+#signup-form a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
+/*LOGIN FORM*/
+#login-form {
+    max-width: 400px; /* Limit the width of the form */
+    margin: 20px auto; /* Center the form on the page */
+    padding: 20px; /* Add padding inside the form */
+    border: 1px solid #ccc; /* Light border for the form */
+    border-radius: 8px; /* Rounded corners */
+    background-color: #f9f9f9; /* Light background color */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+#login-form input {
+    width: 100%; /* Full width for inputs */
+    padding: 10px; /* Padding inside inputs */
+    margin-bottom: 15px; /* Space between inputs */
+    border: 1px solid #ccc; /* Light border for inputs */
+    border-radius: 4px; /* Rounded corners for inputs */
+    font-size: 16px; /* Font size */
+}
+
+#login-form input:focus {
+    border-color: #007bff; /* Change border color on focus */
+    outline: none; /* Remove default outline */
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Subtle shadow on focus */
+}
+
+#login-form button {
+    width: 100%; /* Full width button */
+    padding: 10px; /* Padding inside the button */
+    background-color: #007bff; /* Button background color */
+    color: #fff; /* Button text color */
+    border: none; /* Remove border */
+    border-radius: 4px; /* Rounded corners */
+    font-size: 16px; /* Font size */
+    cursor: pointer; /* Pointer cursor */
+    transition: background-color 0.3s; /* Smooth transition for hover effect */
+}
+
+#login-form button:hover {
+    background-color: #0056b3; /* Darker color on hover */
+}
+
+#login-form p {
+    text-align: center; /* Center align the text */
+    margin-top: 15px; /* Space above the paragraph */
+}
+
+#login-form a {
+    color: #007bff; /* Link color */
+    text-decoration: none; /* Remove underline */
+}
+
+#login-form a:hover {
+    text-decoration: underline; /* Underline on hover for links */
+}
+
+/* Container for the section */
+.container {
+    margin-top: 50px; /* Optional: adjust margin for spacing */
+}
+
+/* Center the heading */
+.text-center {
+    text-align: center;
+}
+
+/* Button Container */
+.button-container {
+    display: flex; /* Use flexbox for alignment */
+    justify-content: center; /* Center the buttons */
+    gap: 20px; /* Space between buttons */
+}
+
+/* Button Styles */
+.button {
+    padding: 10px 20px; /* Add padding for the button */
+    font-size: 16px; /* Font size */
+    border-radius: 5px; /* Rounded corners */
+    text-decoration: none; /* Remove underline */
+    transition: background-color 0.3s, transform 0.3s; /* Smooth transition */
+}
+
+/* Primary Button */
+.btn-primary {
+    background-color: #007bff; /* Bootstrap primary color */
+    color: white; /* Text color */
+}
+
+/* Secondary Button */
+.btn-secondary {
+    background-color: #6c757d; /* Bootstrap secondary color */
+    color: white; /* Text color */
+}
+
+/* Success Button */
+.btn-success {
+    background-color: #28a745; /* Bootstrap success color */
+    color: white; /* Text color */
+}
+
+/* Hover Effects */
+.button:hover {
+    transform: translateY(-2px); /* Slight lift on hover */
+}
+
+.btn-primary:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+}
+
+.btn-secondary:hover {
+    background-color: #5a6268; /* Darker shade on hover */
+}
+
+.btn-success:hover {
+    background-color: #218838; /* Darker shade on hover */
+}
+
+
+
+/*PROFILE.HTML*/
+.dashboard-container {
+    display: flex; /* Flexbox layout for sidebar and main content */
+    margin: 20px; /* Spacing around the dashboard */
+}
+
+.sidebar {
+    width: 200px; /* Fixed width for sidebar */
+    padding: 20px; /* Padding inside sidebar */
+    background-color: #303132; /* Light background for sidebar */
+    border-right: 1px solid #dee2e6; /* Right border */
+}
+
+.main-content {
+    flex: 1; /* Take up remaining space */
+    padding: 20px; /* Padding inside main content */
+}
+
+.profile-container {
+    display: flex; /* Flexbox layout for profile picture and info */
+    align-items: flex-start; /* Align items to the start */
+    gap: 20px; /* Space between picture and info */
+}
+
+.profile-picture {
+    width: 150px; /* Width of the profile picture container */
+    height: 150px; /* Height of the profile picture container */
+    overflow: hidden; /* Hide overflow to maintain circle shape */
+    border-radius: 50%; /* Make the container circular */
+    display: flex; /* Flexbox to center the image */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    border: 2px solid #007bff; /* Optional: border around the profile picture */
+    margin-bottom: 10px; /* Space between picture and button */
+}
+
+.profile-picture img {
+    width: 100%; /* Image should fill the container */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 50%; /* Ensure the image is circular */
+    object-fit: cover; /* Crop the image to fill the circle */
+}
+
+.profile-action {
+    text-align: center; /* Center the button */
+}
+
+.profile-action .btn {
+    display: inline-block; /* Ensure the button has proper spacing */
+}
+
+
+.profile-info {
+    flex: 1; /* Take up remaining space */
+}
+
+.profile-info h2 {
+    margin-bottom: 20px; /* Margin below the heading */
+}
+
+.form-group {
+    margin-bottom: 15px; /* Space between form groups */
+}
+
+label {
+    display: block; /* Block for labels */
+    margin-bottom: 5px; /* Space below labels */
+}
+
+input {
+    width: 100%; /* Full width for input fields */
+    padding: 10px; /* Padding inside input fields */
+    border: 1px solid #ced4da; /* Border for input fields */
+    border-radius: 5px; /* Rounded corners */
+}
+
+input:focus {
+    border-color: #007bff; /* Blue border on focus */
+    outline: none; /* Remove outline */
+}
+
+.btn {
+    padding: 10px 15px; /* Padding for buttons */
+    border: none; /* Remove default border */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer on hover */
+}
+
+/* Button colors */
+.btn-primary {
+    background-color: #007bff; /* Bootstrap primary color */
+    color:lightslategrey; /* Text color */
+}
+
+.btn-success {
+    background-color: #28a745; /* Bootstrap success color */
+    color: rgb(58, 57, 57); /* Text color */
+}
+
+/* Hover effects for buttons */
+.btn:hover {
+    opacity: 0.9; /* Slight transparency on hover */
+}
